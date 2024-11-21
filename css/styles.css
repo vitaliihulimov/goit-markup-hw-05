@@ -393,8 +393,6 @@ a {
 
   font-weight: 400;
   font-size: 16px;
-
-  /* line-height: 24px; */
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
@@ -412,8 +410,6 @@ a {
 .footer-p {
   font-weight: 400;
   font-size: 16px;
-
-  /* line-height: 24px; */
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
@@ -422,8 +418,6 @@ a {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
-
-  /* line-height: 21px; */
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -435,8 +429,6 @@ a {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
-
-  /* line-height: 21px; */
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -507,6 +499,9 @@ img {
 .container-stodio {
   margin-right: 120px;
 }
+.container-social {
+  margin-right: 80px;
+}
 .social-media {
   font-weight: 500;
   font-size: 16px;
@@ -536,4 +531,179 @@ img {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #31d0aa;
+}
+/* modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.backdrop.si-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  width: 408px;
+  min-height: 584px;
+  padding: 24px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+}
+.modal-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 100%;
+  fill: #2e2f42;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+}
+.btn-close {
+}
+.modal-text {
+}
+.modal-form {
+}
+.modal-form-field {
+  margin-bottom: 8px;
+}
+.modal-form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
+}
+.modal-form-wrapper {
+  position: relative;
+}
+
+.modal-form-input {
+  width: 100%;
+  padding: 16px 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+.modal-form-icon {
+  position: absolute;
+  top: 11px;
+  left: 16px;
+  pointer-events: none;
+}
+.modal-form-input:focus:hover + .modal-form-icon {
+}
+.comments {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  min-height: 120px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+textarea {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  min-height: 120px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  padding-top: 8px;
+  padding-left: 16px;
+}
+.policy {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.policy-span {
+  line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+.policy-label {
+}
+.checkbox {
+  position: absolute;
+}
+.button-policy {
+  margin-top: 24px;
+}
+
+/* Email form */
+
+.email-label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-right: 24px;
+}
+.email-form {
+  display: flex;
+  align-items: flex-end;
+}
+.form-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background: #2e2f42;
+}
+.button-email {
+  fill: #fff;
+}
+.email-p {
+  margin-bottom: 16px;
+}
+.button-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 165px;
+  height: 40px;
+  margin: 0;
+}
+.p-button-subscribe {
+  padding-right: 16px;
 }
