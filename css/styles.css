@@ -721,10 +721,10 @@ img {
   fill: #f4f4fd;
 }
 .policy-link {
-  color: #4d5ae5;
-  line-height: 1.33;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
+line-height: 1.33;
+text-decoration: underline;
+text-decoration-skip-ink: none;
+color: #4d5ae5;
 }
 .button-policy {
   margin-top: 24px;
@@ -749,7 +749,7 @@ img {
 .label-subscribe {
   gap: 24px;
 }
-.input-subscribe-class {
+.input-subscribe {
   min-width: 264px;
   height: 40px;
   border: 1px solid #ffffff;
