@@ -619,6 +619,7 @@ img {
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: block;
+  margin-bottom: 4px;
 }
 .modal-form-wrapper {
   position: relative;
